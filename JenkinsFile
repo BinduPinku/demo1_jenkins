@@ -20,7 +20,7 @@ pipeline {
         stage(run) {
             steps {
                 sh 'java -jar target/demo1-0.0.1-SNAPSHOT.jar' 
-                sh 'curl https://localhost:9090/demo1/api/v1/projects'
+                sh 'wget https://localhost:8090/demo1/api/v1/projects'
               }
          }        
     }
