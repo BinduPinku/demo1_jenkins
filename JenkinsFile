@@ -19,7 +19,7 @@ pipeline {
         }
         stage(run) {
             steps {
-                sh 'cp target/*.jar /var/opt/tomcat/webapps/'        
+                sh 'sudo cp target/*.jar /var/opt/tomcat/webapps/'        
             }
          }        
     }
