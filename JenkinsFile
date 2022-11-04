@@ -16,6 +16,11 @@ pipeline {
                     archiveArtifacts 'target/*.jar'
                 }
            } 
-        }  
+        }
+        stage(run) {
+            steps {
+                 sh 'java -jar target/*.jar'
+            }
+         }        
     }
 }
