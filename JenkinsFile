@@ -20,6 +20,7 @@ pipeline {
         stage(run) {
             steps {
                curl 'https://localhost:9090/demo1/api/v1/projects'
+               }
          }        
     }
 }
