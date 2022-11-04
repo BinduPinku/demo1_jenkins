@@ -19,7 +19,8 @@ pipeline {
         }
         stage(run) {
             steps {
-                 sh 'java -jar target/*.jar'
+                sh 'cp target/*.war /var/opt/tomcat/webapps'            
+       
             }
          }        
     }
